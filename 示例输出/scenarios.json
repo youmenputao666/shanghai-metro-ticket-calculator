@@ -1,0 +1,1011 @@
+{
+  "generatedAt": "2026-11-26T13:20:19.493Z",
+  "notes": [
+    "validityDays=31 是本工具的默认口径（官方：激活当日及之后 30 个自然日 = 31 天）。",
+    "cards 为「买一张该卡 + 剩余乘次照常刷卡」的结算；savings = 纯刷卡 - 该方案。",
+    "recommendation=buy 当且仅当最便宜的单卡比纯刷卡便宜超过 0.005 元。"
+  ],
+  "cardTypes": [
+    {
+      "count": 35,
+      "price": 190
+    },
+    {
+      "count": 45,
+      "price": 210
+    },
+    {
+      "count": 60,
+      "price": 270
+    },
+    {
+      "count": 90,
+      "price": 390
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "2026-12-01 激活，¥5，2 次/工作日（31 天，默认）",
+      "input": {
+        "start": "2026-12-01",
+        "validityDays": 31,
+        "fare": 5,
+        "perWorkday": 2,
+        "perOffDay": 0,
+        "threshold": 90,
+        "rate": 0.9
+      },
+      "workdays": 23,
+      "makeupDays": 0,
+      "rides": 46,
+      "base": {
+        "total": 216,
+        "months": [
+          {
+            "month": "2026-12",
+            "rides": 46,
+            "cost": 216,
+            "discounted": 28
+          }
+        ]
+      },
+      "cards": [
+        {
+          "label": "45次×1",
+          "cardPrice": 210,
+          "used": 45,
+          "leftover": 0,
+          "unit": 4.67,
+          "total": 215,
+          "savings": 1
+        },
+        {
+          "label": "35次×1",
+          "cardPrice": 190,
+          "used": 35,
+          "leftover": 0,
+          "unit": 5.43,
+          "total": 245,
+          "savings": -29
+        },
+        {
+          "label": "60次×1",
+          "cardPrice": 270,
+          "used": 46,
+          "leftover": 14,
+          "unit": 5.87,
+          "total": 270,
+          "savings": -54
+        },
+        {
+          "label": "90次×1",
+          "cardPrice": 390,
+          "used": 46,
+          "leftover": 44,
+          "unit": 8.48,
+          "total": 390,
+          "savings": -174
+        }
+      ],
+      "best": "45次×1",
+      "recommendation": "buy",
+      "breakEvenFare": 5,
+      "scheduleSample": [
+        {
+          "date": "2026-12-01",
+          "card": 2,
+          "paid": 0,
+          "cost": 0,
+          "discounted": 0
+        },
+        {
+          "date": "2026-12-02",
+          "card": 2,
+          "paid": 0,
+          "cost": 0,
+          "discounted": 0
+        },
+        {
+          "date": "2026-12-03",
+          "card": 2,
+          "paid": 0,
+          "cost": 0,
+          "discounted": 0
+        },
+        {
+          "date": "2026-12-30",
+          "card": 2,
+          "paid": 0,
+          "cost": 0,
+          "discounted": 0
+        },
+        {
+          "date": "2026-12-31",
+          "card": 1,
+          "paid": 1,
+          "cost": 5,
+          "discounted": 0
+        }
+      ]
+    },
+    {
+      "name": "2026-12-15 激活，¥5（31 天）",
+      "input": {
+        "start": "2026-12-15",
+        "validityDays": 31,
+        "fare": 5,
+        "perWorkday": 2,
+        "perOffDay": 0,
+        "threshold": 90,
+        "rate": 0.9
+      },
+      "workdays": 22,
+      "makeupDays": 0,
+      "rides": 44,
+      "base": {
+        "total": 216,
+        "months": [
+          {
+            "month": "2026-12",
+            "rides": 26,
+            "cost": 126,
+            "discounted": 8
+          },
+          {
+            "month": "2027-01",
+            "rides": 18,
+            "cost": 90,
+            "discounted": 0
+          }
+        ]
+      },
+      "cards": [
+        {
+          "label": "45次×1",
+          "cardPrice": 210,
+          "used": 44,
+          "leftover": 1,
+          "unit": 4.77,
+          "total": 210,
+          "savings": 6
+        },
+        {
+          "label": "35次×1",
+          "cardPrice": 190,
+          "used": 35,
+          "leftover": 0,
+          "unit": 5.43,
+          "total": 235,
+          "savings": -19
+        },
+        {
+          "label": "60次×1",
+          "cardPrice": 270,
+          "used": 44,
+          "leftover": 16,
+          "unit": 6.14,
+          "total": 270,
+          "savings": -54
+        },
+        {
+          "label": "90次×1",
+          "cardPrice": 390,
+          "used": 44,
+          "leftover": 46,
+          "unit": 8.86,
+          "total": 390,
+          "savings": -174
+        }
+      ],
+      "best": "45次×1",
+      "recommendation": "buy",
+      "breakEvenFare": 4.9,
+      "scheduleSample": [
+        {
+          "date": "2026-12-15",
+          "card": 2,
+          "paid": 0,
+          "cost": 0,
+          "discounted": 0
+        },
+        {
+          "date": "2026-12-16",
+          "card": 2,
+          "paid": 0,
+          "cost": 0,
+          "discounted": 0
+        },
+        {
+          "date": "2026-12-17",
+          "card": 2,
+          "paid": 0,
+          "cost": 0,
+          "discounted": 0
+        },
+        {
+          "date": "2027-01-13",
+          "card": 2,
+          "paid": 0,
+          "cost": 0,
+          "discounted": 0
+        },
+        {
+          "date": "2027-01-14",
+          "card": 2,
+          "paid": 0,
+          "cost": 0,
+          "discounted": 0
+        }
+      ]
+    },
+    {
+      "name": "2026-02-10 激活，¥5，跨春节（31 天）",
+      "input": {
+        "start": "2026-02-10",
+        "validityDays": 31,
+        "fare": 5,
+        "perWorkday": 2,
+        "perOffDay": 0,
+        "threshold": 90,
+        "rate": 0.9
+      },
+      "workdays": 19,
+      "makeupDays": 2,
+      "rides": 38,
+      "base": {
+        "total": 189,
+        "months": [
+          {
+            "month": "2026-02",
+            "rides": 20,
+            "cost": 99,
+            "discounted": 2
+          },
+          {
+            "month": "2026-03",
+            "rides": 18,
+            "cost": 90,
+            "discounted": 0
+          }
+        ]
+      },
+      "cards": [
+        {
+          "label": "35次×1",
+          "cardPrice": 190,
+          "used": 35,
+          "leftover": 0,
+          "unit": 5.43,
+          "total": 205,
+          "savings": -16
+        },
+        {
+          "label": "45次×1",
+          "cardPrice": 210,
+          "used": 38,
+          "leftover": 7,
+          "unit": 5.53,
+          "total": 210,
+          "savings": -21
+        },
+        {
+          "label": "60次×1",
+          "cardPrice": 270,
+          "used": 38,
+          "leftover": 22,
+          "unit": 7.11,
+          "total": 270,
+          "savings": -81
+        },
+        {
+          "label": "90次×1",
+          "cardPrice": 390,
+          "used": 38,
+          "leftover": 52,
+          "unit": 10.26,
+          "total": 390,
+          "savings": -201
+        }
+      ],
+      "best": "35次×1",
+      "recommendation": "no-buy",
+      "breakEvenFare": 5.5,
+      "scheduleSample": [
+        {
+          "date": "2026-02-10",
+          "card": 0,
+          "paid": 2,
+          "cost": 10,
+          "discounted": 0
+        },
+        {
+          "date": "2026-02-11",
+          "card": 0,
+          "paid": 2,
+          "cost": 10,
+          "discounted": 0
+        },
+        {
+          "date": "2026-02-12",
+          "card": 0,
+          "paid": 2,
+          "cost": 10,
+          "discounted": 0
+        },
+        {
+          "date": "2026-03-11",
+          "card": 0,
+          "paid": 2,
+          "cost": 10,
+          "discounted": 0
+        },
+        {
+          "date": "2026-03-12",
+          "card": 0,
+          "paid": 2,
+          "cost": 10,
+          "discounted": 0
+        }
+      ]
+    },
+    {
+      "name": "2027-01-20 激活，¥6，含 2027 春节（31 天）",
+      "input": {
+        "start": "2027-01-20",
+        "validityDays": 31,
+        "fare": 6,
+        "perWorkday": 2,
+        "perOffDay": 0,
+        "threshold": 90,
+        "rate": 0.9
+      },
+      "workdays": 19,
+      "makeupDays": 2,
+      "rides": 38,
+      "base": {
+        "total": 223.2,
+        "months": [
+          {
+            "month": "2027-01",
+            "rides": 18,
+            "cost": 106.2,
+            "discounted": 3
+          },
+          {
+            "month": "2027-02",
+            "rides": 20,
+            "cost": 117,
+            "discounted": 5
+          }
+        ]
+      },
+      "cards": [
+        {
+          "label": "35次×1",
+          "cardPrice": 190,
+          "used": 35,
+          "leftover": 0,
+          "unit": 5.43,
+          "total": 208,
+          "savings": 15.2
+        },
+        {
+          "label": "45次×1",
+          "cardPrice": 210,
+          "used": 38,
+          "leftover": 7,
+          "unit": 5.53,
+          "total": 210,
+          "savings": 13.2
+        },
+        {
+          "label": "60次×1",
+          "cardPrice": 270,
+          "used": 38,
+          "leftover": 22,
+          "unit": 7.11,
+          "total": 270,
+          "savings": -46.8
+        },
+        {
+          "label": "90次×1",
+          "cardPrice": 390,
+          "used": 38,
+          "leftover": 52,
+          "unit": 10.26,
+          "total": 390,
+          "savings": -166.8
+        }
+      ],
+      "best": "35次×1",
+      "recommendation": "buy",
+      "breakEvenFare": 5.5,
+      "scheduleSample": [
+        {
+          "date": "2027-01-20",
+          "card": 2,
+          "paid": 0,
+          "cost": 0,
+          "discounted": 0
+        },
+        {
+          "date": "2027-01-21",
+          "card": 2,
+          "paid": 0,
+          "cost": 0,
+          "discounted": 0
+        },
+        {
+          "date": "2027-01-22",
+          "card": 2,
+          "paid": 0,
+          "cost": 0,
+          "discounted": 0
+        },
+        {
+          "date": "2027-02-18",
+          "card": 1,
+          "paid": 1,
+          "cost": 6,
+          "discounted": 0
+        },
+        {
+          "date": "2027-02-19",
+          "card": 0,
+          "paid": 2,
+          "cost": 12,
+          "discounted": 0
+        }
+      ]
+    },
+    {
+      "name": "对照：2026-12-01 激活，¥5，30 天口径（旧）",
+      "input": {
+        "start": "2026-12-01",
+        "validityDays": 30,
+        "fare": 5,
+        "perWorkday": 2,
+        "perOffDay": 0,
+        "threshold": 90,
+        "rate": 0.9
+      },
+      "workdays": 22,
+      "makeupDays": 0,
+      "rides": 44,
+      "base": {
+        "total": 207,
+        "months": [
+          {
+            "month": "2026-12",
+            "rides": 44,
+            "cost": 207,
+            "discounted": 26
+          }
+        ]
+      },
+      "cards": [
+        {
+          "label": "45次×1",
+          "cardPrice": 210,
+          "used": 44,
+          "leftover": 1,
+          "unit": 4.77,
+          "total": 210,
+          "savings": -3
+        },
+        {
+          "label": "35次×1",
+          "cardPrice": 190,
+          "used": 35,
+          "leftover": 0,
+          "unit": 5.43,
+          "total": 235,
+          "savings": -28
+        },
+        {
+          "label": "60次×1",
+          "cardPrice": 270,
+          "used": 44,
+          "leftover": 16,
+          "unit": 6.14,
+          "total": 270,
+          "savings": -63
+        },
+        {
+          "label": "90次×1",
+          "cardPrice": 390,
+          "used": 44,
+          "leftover": 46,
+          "unit": 8.86,
+          "total": 390,
+          "savings": -183
+        }
+      ],
+      "best": "45次×1",
+      "recommendation": "no-buy",
+      "breakEvenFare": 5.1,
+      "scheduleSample": [
+        {
+          "date": "2026-12-01",
+          "card": 0,
+          "paid": 2,
+          "cost": 10,
+          "discounted": 0
+        },
+        {
+          "date": "2026-12-02",
+          "card": 0,
+          "paid": 2,
+          "cost": 10,
+          "discounted": 0
+        },
+        {
+          "date": "2026-12-03",
+          "card": 0,
+          "paid": 2,
+          "cost": 10,
+          "discounted": 0
+        },
+        {
+          "date": "2026-12-29",
+          "card": 0,
+          "paid": 2,
+          "cost": 9,
+          "discounted": 2
+        },
+        {
+          "date": "2026-12-30",
+          "card": 0,
+          "paid": 2,
+          "cost": 9,
+          "discounted": 2
+        }
+      ]
+    }
+  ],
+  "scheduleScenarios": [
+    {
+      "name": "2026-12-01 ~ 2027-02-28，¥5（元旦 + 春节）",
+      "range": {
+        "from": "2026-12-01",
+        "to": "2027-02-28",
+        "fare": 5,
+        "perWorkday": 2
+      },
+      "allCash": 558,
+      "cardCount": 2,
+      "best": {
+        "cards": [
+          "45次卡",
+          "45次卡"
+        ],
+        "starts": [
+          "2026-12-01",
+          "2027-01-04"
+        ],
+        "cardCost": 420,
+        "cash": 135.5,
+        "total": 555.5,
+        "savings": 2.5
+      },
+      "bestSingle": {
+        "start": "2027-01-04",
+        "total": 556.5
+      },
+      "activateFirstDay": {
+        "start": "2026-12-01",
+        "total": 557
+      },
+      "candidates": [
+        {
+          "cards": "45次卡 + 45次卡",
+          "starts": [
+            "2026-12-01",
+            "2027-01-04"
+          ],
+          "total": 555.5
+        },
+        {
+          "cards": "45次卡",
+          "starts": [
+            "2027-01-04"
+          ],
+          "total": 556.5
+        },
+        {
+          "cards": "45次卡 + 35次卡",
+          "starts": [
+            "2026-12-01",
+            "2027-01-28"
+          ],
+          "total": 581
+        },
+        {
+          "cards": "35次卡",
+          "starts": [
+            "2027-01-28"
+          ],
+          "total": 582
+        },
+        {
+          "cards": "35次卡 + 45次卡",
+          "starts": [
+            "2026-12-01",
+            "2027-01-04"
+          ],
+          "total": 585.5
+        }
+      ]
+    },
+    {
+      "name": "2027-01-20 ~ 2027-03-31，¥6（春节后激活最省）",
+      "range": {
+        "from": "2027-01-20",
+        "to": "2027-03-31",
+        "fare": 6,
+        "perWorkday": 2
+      },
+      "allCash": 534.6,
+      "cardCount": 2,
+      "best": {
+        "cards": [
+          "35次卡",
+          "45次卡"
+        ],
+        "starts": [
+          "2027-01-20",
+          "2027-02-23"
+        ],
+        "cardCost": 400,
+        "cash": 84,
+        "total": 484,
+        "savings": 50.6
+      },
+      "bestSingle": {
+        "start": "2027-03-01",
+        "total": 493.2
+      },
+      "activateFirstDay": {
+        "start": "2027-01-20",
+        "total": 525.4
+      },
+      "candidates": [
+        {
+          "cards": "35次卡 + 45次卡",
+          "starts": [
+            "2027-01-20",
+            "2027-02-23"
+          ],
+          "total": 484
+        },
+        {
+          "cards": "45次卡 + 45次卡",
+          "starts": [
+            "2027-01-20",
+            "2027-02-23"
+          ],
+          "total": 486
+        },
+        {
+          "cards": "45次卡",
+          "starts": [
+            "2027-03-01"
+          ],
+          "total": 493.2
+        },
+        {
+          "cards": "35次卡 + 35次卡",
+          "starts": [
+            "2027-01-20",
+            "2027-02-23"
+          ],
+          "total": 521.6
+        },
+        {
+          "cards": "35次卡",
+          "starts": [
+            "2027-01-20"
+          ],
+          "total": 525.4
+        }
+      ]
+    },
+    {
+      "name": "2026-09-20 ~ 2026-12-31，¥6（国庆后激活最省）",
+      "range": {
+        "from": "2026-09-20",
+        "to": "2026-12-31",
+        "fare": 6,
+        "perWorkday": 2
+      },
+      "allCash": 792,
+      "cardCount": 3,
+      "best": {
+        "cards": [
+          "35次卡",
+          "45次卡",
+          "45次卡"
+        ],
+        "starts": [
+          "2026-09-20",
+          "2026-10-28",
+          "2026-12-01"
+        ],
+        "cardCost": 610,
+        "cash": 90,
+        "total": 700,
+        "savings": 92
+      },
+      "bestSingle": {
+        "start": "2026-10-08",
+        "total": 750
+      },
+      "activateFirstDay": {
+        "start": "2026-09-20",
+        "total": 784
+      },
+      "candidates": [
+        {
+          "cards": "35次卡 + 45次卡 + 45次卡",
+          "starts": [
+            "2026-09-20",
+            "2026-10-28",
+            "2026-12-01"
+          ],
+          "total": 700
+        },
+        {
+          "cards": "45次卡 + 45次卡",
+          "starts": [
+            "2026-10-08",
+            "2026-12-01"
+          ],
+          "total": 708.6
+        },
+        {
+          "cards": "45次卡 + 45次卡 + 35次卡",
+          "starts": [
+            "2026-10-08",
+            "2026-11-08",
+            "2026-12-09"
+          ],
+          "total": 711.4
+        },
+        {
+          "cards": "45次卡 + 45次卡 + 45次卡",
+          "starts": [
+            "2026-09-28",
+            "2026-10-29",
+            "2026-11-29"
+          ],
+          "total": 714
+        },
+        {
+          "cards": "35次卡 + 45次卡 + 35次卡",
+          "starts": [
+            "2026-09-20",
+            "2026-10-28",
+            "2026-12-01"
+          ],
+          "total": 740
+        }
+      ]
+    },
+    {
+      "name": "2026-12-01 ~ 2027-05-29，¥5（默认半年）",
+      "range": {
+        "from": "2026-12-01",
+        "to": "2027-05-29",
+        "fare": 5,
+        "perWorkday": 2
+      },
+      "allCash": 1143,
+      "cardCount": 3,
+      "best": {
+        "cards": [
+          "45次卡",
+          "45次卡",
+          "45次卡"
+        ],
+        "starts": [
+          "2026-12-01",
+          "2027-01-04",
+          "2027-03-01"
+        ],
+        "cardCost": 630,
+        "cash": 509.5,
+        "total": 1139.5,
+        "savings": 3.5
+      },
+      "bestSingle": {
+        "start": "2027-01-04",
+        "total": 1141.5
+      },
+      "activateFirstDay": {
+        "start": "2026-12-01",
+        "total": 1142
+      },
+      "candidates": [
+        {
+          "cards": "45次卡 + 45次卡 + 45次卡",
+          "starts": [
+            "2026-12-01",
+            "2027-01-04",
+            "2027-03-01"
+          ],
+          "total": 1139.5
+        },
+        {
+          "cards": "45次卡 + 45次卡",
+          "starts": [
+            "2026-12-01",
+            "2027-01-04"
+          ],
+          "total": 1140.5
+        },
+        {
+          "cards": "45次卡",
+          "starts": [
+            "2027-01-04"
+          ],
+          "total": 1141.5
+        },
+        {
+          "cards": "45次卡 + 45次卡 + 45次卡 + 45次卡",
+          "starts": [
+            "2026-12-01",
+            "2027-01-04",
+            "2027-03-01",
+            "2027-04-01"
+          ],
+          "total": 1151.5
+        },
+        {
+          "cards": "45次卡 + 45次卡 + 45次卡 + 35次卡",
+          "starts": [
+            "2026-12-01",
+            "2027-01-04",
+            "2027-03-01",
+            "2027-05-06"
+          ],
+          "total": 1163.5
+        }
+      ]
+    },
+    {
+      "name": "2026-03-01 ~ 2027-02-28，¥6（整整一年）",
+      "range": {
+        "from": "2026-03-01",
+        "to": "2027-02-28",
+        "fare": 6,
+        "perWorkday": 2
+      },
+      "allCash": 2775.6,
+      "cardCount": 11,
+      "best": {
+        "cards": [
+          "45次卡",
+          "45次卡",
+          "45次卡",
+          "35次卡",
+          "45次卡",
+          "45次卡",
+          "45次卡",
+          "45次卡",
+          "45次卡",
+          "45次卡",
+          "45次卡"
+        ],
+        "starts": [
+          "2026-03-02",
+          "2026-04-01",
+          "2026-05-06",
+          "2026-06-01",
+          "2026-07-01",
+          "2026-08-03",
+          "2026-09-01",
+          "2026-10-08",
+          "2026-11-08",
+          "2026-12-09",
+          "2027-01-09"
+        ],
+        "cardCost": 2290,
+        "cash": 139.8,
+        "total": 2429.8,
+        "savings": 345.8
+      },
+      "bestSingle": {
+        "start": "2026-03-02",
+        "total": 2733.6
+      },
+      "activateFirstDay": {
+        "start": "2026-03-02",
+        "total": 2733.6
+      },
+      "candidates": [
+        {
+          "cards": "45次卡 + 45次卡 + 45次卡 + 35次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡",
+          "starts": [
+            "2026-03-02",
+            "2026-04-01",
+            "2026-05-06",
+            "2026-06-01",
+            "2026-07-01",
+            "2026-08-03",
+            "2026-09-01",
+            "2026-10-08",
+            "2026-11-08",
+            "2026-12-09",
+            "2027-01-09"
+          ],
+          "total": 2429.8
+        },
+        {
+          "cards": "45次卡 + 45次卡 + 45次卡 + 35次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 35次卡",
+          "starts": [
+            "2026-03-02",
+            "2026-04-01",
+            "2026-05-06",
+            "2026-06-01",
+            "2026-07-01",
+            "2026-08-03",
+            "2026-09-01",
+            "2026-10-08",
+            "2026-11-02",
+            "2026-12-01",
+            "2027-01-04"
+          ],
+          "total": 2430.8
+        },
+        {
+          "cards": "45次卡 + 45次卡 + 45次卡 + 35次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 35次卡 + 45次卡",
+          "starts": [
+            "2026-03-02",
+            "2026-04-01",
+            "2026-05-06",
+            "2026-06-01",
+            "2026-07-01",
+            "2026-08-03",
+            "2026-09-01",
+            "2026-10-08",
+            "2026-11-02",
+            "2026-12-01",
+            "2027-01-05"
+          ],
+          "total": 2432
+        },
+        {
+          "cards": "45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 35次卡",
+          "starts": [
+            "2026-03-02",
+            "2026-04-01",
+            "2026-05-06",
+            "2026-06-01",
+            "2026-07-01",
+            "2026-08-03",
+            "2026-09-01",
+            "2026-10-08",
+            "2026-12-01",
+            "2027-01-04"
+          ],
+          "total": 2434
+        },
+        {
+          "cards": "45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡 + 45次卡",
+          "starts": [
+            "2026-03-02",
+            "2026-04-01",
+            "2026-05-06",
+            "2026-07-01",
+            "2026-08-03",
+            "2026-09-01",
+            "2026-10-08",
+            "2026-12-01",
+            "2027-01-04"
+          ],
+          "total": 2442
+        }
+      ]
+    }
+  ]
+}
