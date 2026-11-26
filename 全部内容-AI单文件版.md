@@ -29,6 +29,9 @@
 
 ![逐日安排](截图/schedule-days.jpg)
 
+> 在线预览（GitHub Pages 开启后）：<https://youmenputao666.github.io/shanghai-metro-ticket-calculator/>
+> 仓库里点开 html 文件只能看源码，想直接看到页面效果请用上面的地址，或把文件下载下来双击打开。
+
 ---
 
 > 以下是「交接说明」，写给接手的 AI / 开发者：把工具的用途、口径、算法、代码结构、测试与已知边界一次说清。
@@ -63,6 +66,7 @@ tools/capture-calendar.mjs      ← 指定日期/方案，只截日历卡片
 tools/build-ai-bundle.mjs       ← 重新生成「全部内容-AI单文件版.md」
 示例输出/scenarios.json         ← 上述脚本的产出（可直接对照数值）
 截图/*.jpg                      ← 移动端 / 桌面 / 打印 / 日历局部效果
+index.html                      ← 只有部署到 GitHub Pages 时才用：0 秒跳转到上面那个中文文件名
 ```
 
 ---
